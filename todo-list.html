@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./todo-list.css">
+    <title>ToDo-List</title>
+</head>
+<body>
+    <header id="header"><h1>ToDo_List</h1></header>
+
+    <section id="selector">
+        <div>
+            <select name="todos" class="select-tag">
+                <option value="All">All</option>
+                <option value="completed">completed</option>
+                <option value="Uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        <div class="form">
+            <input type="text" id="box-duty" placeholder="enter your title">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+              </button>
+        </div>
+    </section>
+    <section class="todo-container">
+        <ul class="todo-list"></ul>
+    </section>
+
+    <script src="./todo-list.js"></script>
+</body>
+</html>
